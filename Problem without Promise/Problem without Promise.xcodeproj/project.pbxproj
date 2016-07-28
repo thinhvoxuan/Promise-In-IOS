@@ -14,6 +14,7 @@
 		1497BCE41D49AD6500C70EB1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1497BCE21D49AD6500C70EB1 /* LaunchScreen.storyboard */; };
 		1497BCEF1D49AD6600C70EB1 /* Problem_without_PromiseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1497BCEE1D49AD6600C70EB1 /* Problem_without_PromiseTests.swift */; };
 		1497BCFA1D49AD6600C70EB1 /* Problem_without_PromiseUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1497BCF91D49AD6600C70EB1 /* Problem_without_PromiseUITests.swift */; };
+		14D5654E1D49B00C00DC5ED1 /* Networking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14D5654D1D49B00C00DC5ED1 /* Networking.swift */; };
 		9CED103C82AF439E53E2F582 /* Pods_Problem_without_PromiseTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80689A6934F5509E5F7E706D /* Pods_Problem_without_PromiseTests.framework */; };
 		DD72952CCDCB831118B92F74 /* Pods_Problem_without_PromiseUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 696817798B39D653AA779CDA /* Pods_Problem_without_PromiseUITests.framework */; };
 		E6E494185690B7DB6A420BBB /* Pods_Problem_without_Promise.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F565E1034E570CA9871C9D48 /* Pods_Problem_without_Promise.framework */; };
@@ -50,6 +51,7 @@
 		1497BCF51D49AD6600C70EB1 /* Problem without PromiseUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Problem without PromiseUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1497BCF91D49AD6600C70EB1 /* Problem_without_PromiseUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Problem_without_PromiseUITests.swift; sourceTree = "<group>"; };
 		1497BCFB1D49AD6600C70EB1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		14D5654D1D49B00C00DC5ED1 /* Networking.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Networking.swift; sourceTree = "<group>"; };
 		696817798B39D653AA779CDA /* Pods_Problem_without_PromiseUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Problem_without_PromiseUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		80689A6934F5509E5F7E706D /* Pods_Problem_without_PromiseTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Problem_without_PromiseTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		81299F75F6A286FE8F072492 /* Pods-Problem without PromiseUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Problem without PromiseUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Problem without PromiseUITests/Pods-Problem without PromiseUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -120,6 +122,7 @@
 				1497BCE01D49AD6500C70EB1 /* Assets.xcassets */,
 				1497BCE21D49AD6500C70EB1 /* LaunchScreen.storyboard */,
 				1497BCE51D49AD6500C70EB1 /* Info.plist */,
+				14D5654D1D49B00C00DC5ED1 /* Networking.swift */,
 			);
 			path = "Problem without Promise";
 			sourceTree = "<group>";
@@ -427,6 +430,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				14D5654E1D49B00C00DC5ED1 /* Networking.swift in Sources */,
 				1497BCDC1D49AD6500C70EB1 /* ViewController.swift in Sources */,
 				1497BCDA1D49AD6500C70EB1 /* AppDelegate.swift in Sources */,
 			);

@@ -7,19 +7,28 @@
 //
 
 import UIKit
+import Alamofire
 
 class ViewController: UIViewController {
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+    let networking = Networking.sharedInstance
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
+        self.fetchInformation()
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    
+    func fetchInformation() {
+        networking.fetchAppVersion()
+                .responseJSON(completionHandler: { (responseJSON) in
+                self.networking.fetchConfig()
+                    .responseJSON(completionHandler: { (responseJSON2) in
+                        self.networking.fetchProfile()
+                            .responseJSON(completionHandler: { (responseJSON3) in
+                                print("\(responseJSON)")
+                                print("\(responseJSON2)")
+                                print("\(responseJSON3)")
+                    })
+                })
+        })
     }
-
-
 }
 
