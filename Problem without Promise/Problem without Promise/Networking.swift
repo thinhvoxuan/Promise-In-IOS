@@ -12,7 +12,7 @@ import Alamofire
 class Networking: NSObject {
     static let sharedInstance = Networking()
     
-    func fetchConfig() -> Request{
+    func fetchConfig() -> Request {
         return Alamofire.request(.GET, "https://httpbin.org/get")
     }
     func fetchProfile() -> Request{
