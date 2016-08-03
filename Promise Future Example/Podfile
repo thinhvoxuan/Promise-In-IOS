@@ -1,0 +1,26 @@
+# Uncomment this line to define a global platform for your project
+# platform :ios, '9.0'
+
+target 'Promise Future Example' do
+  # Comment this line if you're not using Swift and don't want to use dynamic frameworks
+  use_frameworks!
+
+  pod 'Bolts-Swift'
+  pod 'BrightFutures'
+  pod 'Alamofire', '~> 3.4'
+  # Pods for Promise Future Example
+
+  target 'Promise Future ExampleTests' do
+    inherit! :search_paths
+    pod 'Bolts-Swift'
+    pod 'BrightFutures'
+    pod 'Alamofire', '~> 3.4'
+    # Pods for testing
+  end
+
+  target 'Promise Future ExampleUITests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+end

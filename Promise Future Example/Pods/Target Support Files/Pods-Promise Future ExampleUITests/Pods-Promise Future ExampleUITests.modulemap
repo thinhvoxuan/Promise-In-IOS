@@ -1,0 +1,6 @@
+framework module Pods_Promise_Future_ExampleUITests {
+  umbrella header "Pods-Promise Future ExampleUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
